@@ -1,0 +1,21 @@
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  margin: 0 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  background-color: #555;
+}
+
+.router-outlet {
+  margin-top: 20px; /* Space between navbar and content */
+}

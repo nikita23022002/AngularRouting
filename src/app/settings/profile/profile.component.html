@@ -1,0 +1,28 @@
+<div class="profile-form-container">
+    <h2>Create Profile</h2>
+    <form #profileForm="ngForm" (ngSubmit)="onSubmit(profileForm)">
+      
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" ngModel required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" ngModel required>
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" ngModel>
+      </div>
+  
+      <div class="form-group">
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" ngModel></textarea>
+      </div>
+  
+      <button type="submit" [disabled]="!profileForm.form.valid">Create Profile</button>
+    </form>
+  </div>
+  

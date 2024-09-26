@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center items */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin: 0 10px; /* Space between links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover, nav a.active {
+    background-color: #555; /* Darker background on hover and active */
+  }
+  
+  .router-outlet {
+    margin-top: 20px; /* Space between nav and router-outlet */
+  }
+  
